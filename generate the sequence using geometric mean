@@ -1,0 +1,15 @@
+class Main {
+   
+	public static void main(String[] args) {
+		// Implement your code here 
+	   int a=1;
+       int r=2;
+       int n=5;
+        for(int i=1;i<=n;i++){
+           int b=a*(int)(Math.pow(r,i-1));
+                System.out.print(b);
+        }
+		
+
+}
+
