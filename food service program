@@ -1,0 +1,33 @@
+*******************************************************************************/
+class Main{
+	public static void main(String[] args) {
+		  // Implement your code here 
+		 char f='N';
+		 int quantity=2;
+		 int distance =3;
+		 if(f=='N'||f=='V'){
+		 if( quantity>0 && distance>0){
+		     if(f=='N'){
+		         if(distance<=3)
+		         System.out.println(15*quantity);
+		         else if(distance>3 &&distance<=6)
+		         System.out.println(15*quantity+1);
+		         else
+		         System.out.println(15*quantity+2);
+		     }
+		     else{
+		         if(distance<=3)
+		         System.out.println(12*quantity);
+		         else if(distance>3 &&distance<=6)
+		         System.out.println(12*quantity+1);
+		         else
+		         System.out.println(12*quantity+2);
+		         
+		     }
+		 }
+		 }
+		 else
+		 System.out.println("-1");
+		 
+	}
+}
