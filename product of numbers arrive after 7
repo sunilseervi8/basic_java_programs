@@ -1,0 +1,28 @@
+class Tester {
+   
+
+
+	public static void main(String[] args) {
+		int  num1=7,num2=2,num3=9;
+        int  product=0;
+    if (num1 != 7 && num2 != 7 && num3 != 7){
+        product = num1 * num2 * num3;
+        System.out.println(product);
+       }
+    else if (num1 == 7){
+        product = num2 * num3;
+        System.out.println(product);
+      }
+      
+    else if(num2 == 7){
+        product = num3;
+        System.out.println(product);
+    }
+    else if(num3 == 7){
+        product = -1;
+        System.out.println(product);
+    }
+    else 
+    System.out.println();
+	}
+}
