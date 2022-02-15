@@ -1,0 +1,29 @@
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+import java.util.HashSet;
+public class Main
+{
+	public static void main(String[] args) {
+	    int arr1[]={1,2,3,4,5,6};
+	    int arr2[]={4,6,7,9};  
+	    printIntersection(arr1,arr2);
+	}
+	private static void printIntersection(int[] arr1,int[] arr2){
+	      HashSet<Integer>hs=new HashSet<>();
+	      //addin the each and every eleemnent to hashset then checking wheather it arr2 element is repeated
+	      
+	      for(int i=0;i<arr1.length;i++){
+	          hs.add(arr1[i]);
+	      }
+	      for(int i=0;i<arr2.length;i++){
+	          if(hs.contains(arr2[i]))
+	          System.out.println(arr2[i]);
+	      }
+	}
+}
+
